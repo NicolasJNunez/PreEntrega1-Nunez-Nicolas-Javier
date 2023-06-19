@@ -209,13 +209,6 @@ section .icono {
   }
 } */
 
-/* @media (max-width: 1317px) {
-  section .portada__video {
-    width: 1000px;
-    left: 400px;
-    object-fit: contain;
-  }
-} */
 @media (max-width: 1161px) {
   section .portada__video {
     display: none;
