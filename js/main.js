@@ -1,5 +1,11 @@
-function mensaje () {
-calcularUnidades(prompt("Cual fue el valor de azucar en sangre?"));
+function mensaje() {
+  let valorAzucar = prompt("¿Cuál fue el valor de azúcar en sangre?");
+  
+  if (valorAzucar === null) {
+    alert("Por favor, escriba un número");
+  } else {
+    calcularUnidades(valorAzucar);
+  }
 }
 
 function calcularUnidades (nivelAzucar) {
