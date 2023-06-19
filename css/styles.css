@@ -1,0 +1,163 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  padding: 1rem;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+header {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  margin: 20px 0 30px 0;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 30px;
+  background-image: linear-gradient(45deg,hsl(194, 100%, 13%),hsl(194, 100%, 17%),hsl(194, 100%, 22%),hsl(194, 100%, 27%),hsl(194, 100%, 32%),hsl(194, 100%, 37%),hsl(194, 100%, 42%),hsl(194, 100%, 47%),hsl(194, 100%, 52%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: color 2s infinite alternate;
+  font-size: 5rem;
+}
+
+section {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 1rem;
+  margin-left: 50px;
+}
+
+section h2 {
+  background-color: #666666;
+  font-size: 2rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
+section h2 span{
+  text-decoration: underline;
+}
+
+section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section article h3 {
+  text-shadow: .5px .5px 2px rgba(0, 0, 0, 0.529);
+}
+
+section article h3 span {
+  margin-left: 5px;
+  font-weight: 900;
+  color: hsl(194, 100%, 42%);
+  font-size: 1.6rem;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: hsl(194, 100%, 42%);
+  text-shadow: none;
+}
+
+section article p {
+  border-left: 2.8px solid;
+  padding-left: 12px;
+  border-image: linear-gradient(to bottom, transparent 5%, rgba(32, 32, 32, 0.784) 5%, transparent);
+  border-image-slice: 1;
+  width: 400px;
+}
+
+section article p span {
+  font-weight: 700;
+}
+
+section .subr {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+section article .backg {
+  font-weight: normal;
+  background-color: hsl(198, 100%, 66%);
+  padding: .05rem .2rem;
+  border-radius: 5px;
+  line-height: 1.3rem;
+  color: white;
+}
+
+section .span {
+  margin-top: 15px;
+  font-weight: 800;
+  color: white;
+  background-color: rgb(0, 166, 237);
+  padding: .7rem .7rem .8rem .7rem;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: .3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+section .span:hover {
+  transform: scale(1.1);
+}
+
+section .span-listado {
+  border-top: 2px solid rgba(0, 0, 0, 0.475);
+  padding-top: 2rem;
+  width: 400px;
+  text-align: center;
+}
+
+section .span-boton-listado {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: unset;
+  border: none;
+  text-decoration: underline;
+  color: hsl(198, 100%, 36%);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+section .portada__video {
+  position: absolute;
+  left: 300px;
+  top: 0;
+  z-index: -100;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(160%) grayscale(100%);  
+}
+
+section .icono {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+@keyframes color {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
