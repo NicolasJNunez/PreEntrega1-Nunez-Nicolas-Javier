@@ -3,8 +3,10 @@ function mensaje() {
   
   if (valorAzucar === null) {
     alert("Por favor, escriba un número");
+  } else if (isNaN(valorAzucar)) {
+    alert("Porfavor, introduzca un numero");
   } else {
-    calcularUnidades(valorAzucar);
+    calcularUnidades(parseInt(valorAzucar));
   }
 }
 
