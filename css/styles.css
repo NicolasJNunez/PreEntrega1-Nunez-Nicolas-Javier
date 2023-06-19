@@ -161,3 +161,79 @@ section .icono {
     background-position: right;
   }
 }
+
+
+@media (max-width: 1647px) {
+  section .portada__video {
+    width: 1200px;
+    left: 500px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1453px) {
+  section .portada__video {
+    width: 1200px;
+    left: 400px;
+    object-fit: contain;
+  }
+}
+@media (max-width: 1353px) {
+  section .portada__video {
+    width: 1200px;
+    left: 350px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1317px) {
+  section .portada__video {
+    width: 1000px;
+    left: 400px;
+    object-fit: contain;
+  }
+}
+@media (max-width: 1161px) {
+  section .portada__video {
+    display: none;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section {
+    margin: 0;
+  }
+}
+
+@media (max-width: 733px) {
+  main {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  section {
+    width: 100%;
+  }
+  section article {
+    width: 100%;
+  }
+  section article p {
+    width: 80%;
+  }
+  section h2 {
+    text-align: center;
+    font-size: 6vw;
+  }
+  section h3 {
+    text-align: center;
+    font-size: 6vw;
+  }
+  section .span-listado {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 10vw;
+  }
+}
